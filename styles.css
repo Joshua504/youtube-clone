@@ -1,0 +1,107 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: #202020;
+    margin: .5em 1em;
+    color: white;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+}
+nav .logo img{
+    padding-left: 1.3em;
+}
+nav .search{
+    position: relative;
+    top: -.5em;
+    margin-right: 5em;
+}
+nav .search input{
+    height: 3em;
+    padding-right: 26em;
+    padding-left: 0.5em;
+    background: #121212;
+    color: antiquewhite;
+    border: 1px solid #323232;
+    outline: none;
+}
+nav .search button{
+    position: relative;
+    top: .5em;
+    right: .3em;
+    padding: .5em 1.3em;
+    border-radius: -4em;
+    background: #323232;
+    border: none;
+}
+nav .search .mic{
+    position: relative;
+    top: 1em;
+}
+nav .sign img{
+    padding-right: 1em;
+}
+nav .sign button{
+    padding:.5em 1em;
+    color: #3EA6FF;
+    font-weight: bold;
+    background: #202020;
+    border-radius: 30px;
+    border: 1px solid #323232;
+}
+nav .sign button img{
+    position: relative;
+}
+/* body style */
+.contain{
+    display: flex;
+}
+.feature{
+    margin: .8em 0;
+}
+.feature button{
+    margin-right: 1em;
+    padding:.5em 1em;
+    color: white;
+    background: #323232;
+    border: 1px solid #4B4B4B;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: .5s ease-in-out;
+}
+.feature .btn{
+    color: black;
+    background: #ffff;
+    border: none;
+}
+.feature button:hover{
+    transform: scale(1.1);
+}
+.subcontain{
+    display: flex;
+    margin: 1em;
+    gap: 1.3em;
+}
+.subcontain .user{
+    display: flex;
+    margin-top: 1em;
+    gap: 1em;
+    width: min(20, 50%);
+}
+.subcontain .user img{
+    height: 5vh;
+}
+.subcontain .user h1{
+    margin-bottom: .5em;
+    font-size: .8rem;
+}
+.subcontain .user p{
+    font-size: .7em;
+}
+.subcontain .cover{
+    cursor: pointer;
+}
