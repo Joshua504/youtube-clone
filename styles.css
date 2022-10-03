@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 *{
     margin: 0;
     padding: 0;
@@ -7,7 +8,9 @@ body{
     background: #202020;
     margin: .5em 1em;
     color: white;
+    font-family: 'Roboto', sans-serif
 }
+/* nav-styling */
 nav{
     display: flex;
     justify-content: space-between;
@@ -52,10 +55,13 @@ nav .sign button{
     background: #202020;
     border-radius: 30px;
     border: 1px solid #323232;
+    cursor: pointer;
+    transition: .5s ease-out;
 }
-nav .sign button img{
-    position: relative;
+nav .sign button:hover{
+    transform: scale(1.1);
 }
+
 /* body style */
 .contain{
     display: flex;
@@ -81,6 +87,10 @@ nav .sign button img{
 .feature button:hover{
     transform: scale(1.1);
 }
+.back{
+    padding: 1em 0;
+    background: #181818;
+}
 .subcontain{
     display: flex;
     margin: 1em;
@@ -104,4 +114,34 @@ nav .sign button img{
 }
 .subcontain .cover{
     cursor: pointer;
+}
+/* side nav-styling */
+.sidenav{
+    position: sticky;
+    margin-top: 1em;
+    padding-right: .8em;
+}
+.sidenav div{
+    display: flex;
+    margin: .7em 0 .8em 0;
+}
+.sidenav div h1{
+    padding-left: 2em;
+}
+.sidenav h5{
+    margin-top: 1em;
+}
+.sidenav button{
+    margin: 1em 0;
+    padding:.5em 1em;
+    color: #3EA6FF;
+    font-weight: bold;
+    background: #202020;
+    border-radius: 30px;
+    border: 1px solid #323232;
+    cursor: pointer;
+    transition: .5s ease-out;
+}
+.sidenav button:hover{
+    transform: scale(1.1);
 }
